@@ -56,7 +56,7 @@ class PdoGsb
         }
         return PdoGsb::$monPdoGsb;
     }
-
+ 
     /**
      * Retourne les informations d'un visiteur
      *
