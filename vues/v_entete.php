@@ -90,14 +90,14 @@
                                     Accueil
                                 </a>
                             </li>
-                            <li <?php if ($uc == 'gererFrais') { ?>class="active"<?php } ?>>
+                            <li <?php if ($uc == 'validerFrais') { ?>class="active"<?php } ?>>
                                 <a style="color:orange" onclick="this.style.text='#ffffff'" href="index.php?uc=validerFrais&action=choixVM">
                                     <span class="glyphicon glyphicon-ok"></span>
                                     Valider les fiches de frais
                                 </a>
                             </li>
-                            <li <?php if ($uc == 'etatFrais') { ?>class="active"<?php } ?>>
-                                <a style="color:orange" onclick="this.style.text='#ffffff'" href="">
+                            <li <?php if ($uc == 'suiviPaiement') { ?>class="active"<?php } ?>>
+                                <a style="color:orange" onclick="this.style.text='#ffffff'" href="index.php?uc=suiviPaiement&action=choixVM">
                                     <span class="glyphicon glyphicon-euro"></span>
                                     Suivre le paiement des fiches de frais
                                 </a>

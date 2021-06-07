@@ -31,7 +31,7 @@
                         <div class="form-group">
                             <div class="input-group">
                                 <span class="input-group-addon">
-                                    <i class="glyphicon glyphicon-lock"></i>
+                                    <i class="glyphicon glyphicon-lock"></i> 
                                 </span>
                                 <input class="form-control"
                                        placeholder="Mot de passe" name="mdp"

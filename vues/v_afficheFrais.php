@@ -126,12 +126,12 @@
           <input name="lstVisiteurs" type="hidden" id="lstVisiteurs" class="form-control" value="<?php echo $visiteurASelectionner ?>">
       <tr> 
           <td><input name="date" type="text"  class="form-control" value="<?php echo $date ?>"></td>
- <td><input name="montant" type="text"  class="form-control" value="<?php echo $montant ?>"></td>
  <td><input name="libelle" type="text"  class="form-control" value="<?php echo $libelle ?>"></td>
+ <td><input name="montant" type="text"  class="form-control" value="<?php echo $montant ?>"></td>
  <td><input name="idFHF" type="hidden"  class="form-control" value="<?php echo $idFHF ?>"></td>
-   <td>    <button class="btn btn-success" type="submit">Corriger</button>      
+   <td>    <button class="btn btn-success" type="submit" name="corriger" id="corriger">Corriger</button>      
                <button class="btn btn-danger" type="reset">Reinitialiser</button> 
-          <button class="btn btn-success" type="submit">reporter</button>  <td>    
+          <button class="btn btn-success" type="submit" name="reporter" id="reporter">reporter</button>  <td>    
                
        <?php } ?>
                </table>         
@@ -141,7 +141,10 @@
     <form method="post"
              action="index.php?uc=validerFrais&action=validerFicheFrais"
              role="form">
-         Nombre de justificatifs: <input type="text" name="nbJustificatifs" class="form-control-me" value="<?php echo $nbJustificatifs ?>">
+         <input name="lstMois" type="hidden" id="lstMois" class="form-control" value="<?php echo $moisASelectionner ?>">
+          <input name="lstVisiteurs" type="hidden" id="lstVisiteurs" class="form-control" value="<?php echo $visiteurASelectionner ?>">
+          Nombre de justificatifs: <input type="text" id="nbJust" name="nbJust" class="form-control-me" value="<?php echo $nbJustificatifs ?>"><br><br> 
+
 
         <button class="btn btn-success" type="submit">Valider</button>      
                <button class="btn btn-danger" type="reset">Reinitialiser</button>
